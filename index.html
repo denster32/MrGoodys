@@ -6,12 +6,28 @@
 </head>
 
 <body>
+    <script>
+        var audio = new Audio("rocky.mp3");
+    
+        let food = prompt("Do you like Gyros, Ribs or Beef... yes or no?");
+        food = food.toLowerCase();
+        if(food == "yes"){
+
+            alert("This is the right place for you!");
+            document.write("Thanks for stopping by.  Please check out our menu and location below.");
+            audio.play();
+        } else if(food == "no"){
+            alert("Go somewhere else!");
+            window.location.replace("https://www.mcdonalds.com/us/en-us.html");
+        } else {
+            alert("CANNOT COMPUTE");
+            document.write("We could not understand your repsonse, please feel free to look around!");
+        }
+    </script>
     <header>
         <h1 style=>Mr Goodys</h1>
         <nav1>
             <a href="https://goo.gl/maps/mCJ2vfnELdnZunxx6">Google Map</a>
-            <a href="/">Link2</a>
-            <a href="#">Link3</a>
         </nav1>
     </header>
     <main>

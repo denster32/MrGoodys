@@ -2,30 +2,20 @@
 
 <head>
     <title>MrGoodys</title>
-    <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <script src="script.js"></script>
     <script>
-        var audio = new Audio("rocky.mp3");
-    
-        let food = prompt("Do you like Gyros, Ribs or Beef... yes or no?");
-        food = food.toLowerCase();
-        if(food == "yes"){
-
-            alert("This is the right place for you!");
-            document.write("Thanks for stopping by.  Please check out our menu and location below.");
-            audio.play();
-        } else if(food == "no"){
-            alert("Go somewhere else!");
-            window.location.replace("https://www.mcdonalds.com/us/en-us.html");
-        } else {
-            alert("CANNOT COMPUTE");
-            document.write("We could not understand your repsonse, please feel free to look around!");
-        }
+            sayHi()
+            foodChoice()
     </script>
     <header>
         <h1 style=>Mr Goodys</h1>
+        <script>
+            howManyFries()
+        </script>
         <nav1>
             <a href="https://goo.gl/maps/mCJ2vfnELdnZunxx6">Google Map</a>
         </nav1>
